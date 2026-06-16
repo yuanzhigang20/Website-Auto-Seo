@@ -1,0 +1,14 @@
+(() => {
+  const input=document.querySelector('[data-tool-search]');
+  const count=document.querySelector('[data-tool-count]');
+  const cards=[...document.querySelectorAll('[data-tool-card]')];
+  if(!input||!cards.length) return;
+  const params=new URLSearchParams(location.search); const q=params.get('q'); if(q) input.value=q;
+  function filter(){
+    const query=input.value.trim().toLowerCase(); let shown=0;
+    cards.forEach(card=>{const hay=(card.dataset.name+' '+card.dataset.category+' '+card.dataset.keywords).toLowerCase(); const ok=!query||hay.includes(query); card.hidden=!ok; if(ok) shown++;});
+    document.querySelectorAll('[data-tool-group]').forEach(group=>{const any=[...group.querySelectorAll('[data-tool-card]')].some(c=>!c.hidden); group.hidden=!any;});
+    if(count) count.textContent=query?`${shown} matching tools`:`${cards.length} tools available`;
+  }
+  input.addEventListener('input',filter); filter();
+})();

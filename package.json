@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "validate": "node scripts/validate-site.mjs",
+    "audit": "node scripts/audit-site.mjs"
+  },
+  "devDependencies": {}
+}

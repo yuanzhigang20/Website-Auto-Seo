@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Pawstool icon</title>
+  <desc id="desc">A warm orange rounded square with a white paw mark shaped like a handy tool.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="10" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="0.52" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7c2d12" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="31" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <circle cx="38" cy="39" r="13" fill="#fff7ed"/>
+    <circle cx="61" cy="30" r="13" fill="#fff7ed"/>
+    <circle cx="85" cy="39" r="13" fill="#fff7ed"/>
+    <circle cx="100" cy="62" r="12" fill="#fff7ed"/>
+    <path d="M34 82c0-21 16-34 34-34s34 13 34 34c0 15-11 25-25 18-6-3-12-5-18-5s-12 2-18 5c-15 7-27-3-27-18Z" fill="#fff7ed"/>
+    <path d="M76 70 93 53a7 7 0 0 1 10 10L86 80l15 15a7 7 0 0 1-10 10L76 90 62 104a7 7 0 0 1-10-10l14-14-11-11a7 7 0 1 1 10-10l11 11Z" fill="#1f2937" opacity="0.16"/>
+  </g>
+</svg>

@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "image",
+    "name": "Image Tools",
+    "description": "Convert, compress, resize, crop, and prepare images in your browser.",
+    "targetTools": 80,
+    "priority": "high"
+  },
+  {
+    "slug": "pdf",
+    "name": "PDF Tools",
+    "description": "Work with PDF text, pages, metadata, and document utilities.",
+    "targetTools": 60,
+    "priority": "high"
+  },
+  {
+    "slug": "text",
+    "name": "Text Tools",
+    "description": "Count, clean, format, sort, and transform everyday text.",
+    "targetTools": 70,
+    "priority": "high"
+  },
+  {
+    "slug": "seo",
+    "name": "SEO Tools",
+    "description": "Check snippets, metadata, schema, robots, sitemaps, and on-page signals.",
+    "targetTools": 60,
+    "priority": "high"
+  },
+  {
+    "slug": "developer",
+    "name": "Developer Tools",
+    "description": "Format, encode, decode, validate, hash, and debug common developer data.",
+    "targetTools": 80,
+    "priority": "high"
+  },
+  {
+    "slug": "social-media",
+    "name": "Social Media Tools",
+    "description": "Create platform-ready captions, hashtags, bios, post lengths, and image specs.",
+    "targetTools": 50,
+    "priority": "medium"
+  },
+  {
+    "slug": "app-store",
+    "name": "App Store / ASO Tools",
+    "description": "Plan app screenshots, titles, subtitles, keywords, and release copy.",
+    "targetTools": 40,
+    "priority": "medium"
+  },
+  {
+    "slug": "calculators",
+    "name": "Calculators",
+    "description": "Calculate percentages, ratios, growth, discounts, units, and business values.",
+    "targetTools": 30,
+    "priority": "medium"
+  },
+  {
+    "slug": "color",
+    "name": "Color Tools",
+    "description": "Convert colors, test contrast, build palettes, and generate gradients.",
+    "targetTools": 30,
+    "priority": "medium"
+  },
+  {
+    "slug": "date-time",
+    "name": "Date & Time Tools",
+    "description": "Convert timestamps, compare time zones, count workdays, and plan deadlines.",
+    "targetTools": 30,
+    "priority": "medium"
+  },
+  {
+    "slug": "ai-writing",
+    "name": "AI Writing Tools",
+    "description": "Draft, rewrite, summarize, and shape useful writing prompts and copy.",
+    "targetTools": 40,
+    "priority": "medium"
+  },
+  {
+    "slug": "business",
+    "name": "Business Tools",
+    "description": "Plan, calculate, format, and review everyday business documents, metrics, and operations.",
+    "targetTools": 60,
+    "priority": "medium"
+  },
+  {
+    "slug": "marketing",
+    "name": "Marketing Tools",
+    "description": "Build campaigns, landing page copy, ad ideas, audience notes, and analytics helpers.",
+    "targetTools": 60,
+    "priority": "medium"
+  },
+  {
+    "slug": "email",
+    "name": "Email Tools",
+    "description": "Write, format, validate, clean, and prepare email copy, subject lines, signatures, and outreach.",
+    "targetTools": 50,
+    "priority": "medium"
+  },
+  {
+    "slug": "finance",
+    "name": "Finance Tools",
+    "description": "Calculate personal finance, pricing, investment, budgeting, and money-planning values.",
+    "targetTools": 50,
+    "priority": "medium"
+  },
+  {
+    "slug": "education",
+    "name": "Education Tools",
+    "description": "Create study notes, quiz prompts, rubrics, lesson plans, citations, and classroom helpers.",
+    "targetTools": 50,
+    "priority": "medium"
+  },
+  {
+    "slug": "writing",
+    "name": "Writing Tools",
+    "description": "Rewrite, outline, polish, count, simplify, and structure writing for different formats.",
+    "targetTools": 60,
+    "priority": "medium"
+  },
+  {
+    "slug": "data",
+    "name": "Data Tools",
+    "description": "Clean, transform, inspect, split, merge, and summarize CSV, list, table, and plain-text data.",
+    "targetTools": 60,
+    "priority": "medium"
+  },
+  {
+    "slug": "security",
+    "name": "Security Tools",
+    "description": "Generate security checklists, passwords, headers, risk notes, and privacy-safe inspection reports.",
+    "targetTools": 50,
+    "priority": "medium"
+  },
+  {
+    "slug": "website",
+    "name": "Website Tools",
+    "description": "Generate HTML, CSS, metadata, launch checklists, status notes, and website QA helpers.",
+    "targetTools": 60,
+    "priority": "medium"
+  }
+]
