@@ -94,7 +94,13 @@ Expanded short informational pages with additional crawlable, useful content:
 
 ## HSTS note
 
-HSTS is a server/header concern rather than static HTML. It should be changed only after confirming all intended subdomains support HTTPS. This report does not force `includeSubDomains` or `preload` from the static project.
+HSTS was fixed at the Nginx layer after deployment. The production server now returns:
+
+```http
+Strict-Transport-Security: max-age=31536000
+```
+
+This was applied to the canonical host, the `www` redirect host, and static asset responses. `includeSubDomains` and `preload` were intentionally not enabled because Semrush reported subdomain HSTS gaps and all subdomains should be confirmed HTTPS-safe before using those stronger directives.
 
 ## Local validation
 
@@ -123,16 +129,29 @@ A full local scan found:
 - `WebSite`: 1
 - Missing required SoftwareApplication fields: 0
 
-## Deployment checklist
+## Deployment and live verification
 
-Pending/next:
+Completed:
 
-- Commit and push changes to GitHub.
-- Deploy static files to the Pawstool production server (`153.75.235.250`, `/usr/share/nginx/html`).
-- Verify live URLs:
-  - `https://pawstool.com/llms.txt`
-  - `https://pawstool.com/developer/json-formatter/`
-  - `https://pawstool.com/developer/`
-  - `https://pawstool.com/image/`
-  - `https://pawstool.com/tools/`
-  - `https://pawstool.com/contact/`
+- Committed and pushed code to GitHub.
+- Commit: `c3d8ce5 Fix Semrush SEO audit issues`.
+- Deployed static files to the Pawstool production server (`153.75.235.250`, `/usr/share/nginx/html`).
+- Production backup created: `/root/backups/pawstool/html-20260623-125207.tar.gz`.
+- Previous production tree retained temporarily as: `/usr/share/nginx/html.old-20260623-125207`.
+- Nginx config backup before HSTS changes:
+  - `/root/backups/pawstool/website.conf-hsts-20260623-061039`
+  - `/root/backups/pawstool/website.conf-hsts-static-20260623-061102`
+
+Live URLs verified:
+
+- `https://pawstool.com/developer/json-formatter/` returned `200` and includes `SoftwareApplication`, `styles.min.css`, and `dev-core-tools.min.js`.
+- `https://pawstool.com/developer/` returned `200` and includes the AI-search enhancement section.
+- `https://pawstool.com/image/` returned `200` and includes the AI-search enhancement section.
+- `https://pawstool.com/tools/` returned `200` and includes the AI-search enhancement section.
+- `https://pawstool.com/contact/` returned `200` with title `Contact Pawstool - Support & Feedback` and H1 `Contact Pawstool`.
+- `https://pawstool.com/llms.txt` exists on origin and returned `200` through Cloudflare after retry.
+- `https://pawstool.com/assets/js/site.min.js` exists on origin and returned `200` through Cloudflare.
+
+Cloudflare note:
+
+During verification, Cloudflare intermittently returned `522` or SSL timeout for `/llms.txt` and `/assets/js/site.min.js`. Direct origin checks with `--resolve pawstool.com:443:153.75.235.250` returned `200`, and Nginx access logs also showed Cloudflare requests for these paths returning `200`. This indicates a transient Cloudflare/origin connection issue rather than missing deployed files.
