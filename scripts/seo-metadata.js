@@ -4,12 +4,12 @@ export function canonical(path) { return new URL(path, SITE.origin).toString(); 
 export function toolJsonLd({ name, description, url, category, faqs = [] }) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    '@type': 'SoftwareApplication',
     name,
     description,
     url,
     applicationCategory: category,
-    operatingSystem: 'Any',
+    operatingSystem: 'Web Browser',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     mainEntity: faqs.map(faq => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } }))
   };

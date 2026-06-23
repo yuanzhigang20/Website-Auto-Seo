@@ -1,0 +1,26 @@
+# Pawstool
+
+Pawstool is a free browser-based tools directory at https://pawstool.com. It provides practical utilities for image workflows, PDF tasks, text cleanup, SEO checks, developer formatting, app store optimization, business, marketing, data, security, finance, education, writing, website QA, and creator workflows.
+
+## Important URLs
+
+- Home: https://pawstool.com/
+- All tools: https://pawstool.com/tools/
+- Image tools: https://pawstool.com/image/
+- PDF tools: https://pawstool.com/pdf/
+- Text tools: https://pawstool.com/text/
+- SEO tools: https://pawstool.com/seo/
+- Developer tools: https://pawstool.com/developer/
+- Website tools: https://pawstool.com/website/
+- App Store / ASO tools: https://pawstool.com/app-store/
+- Sitemap: https://pawstool.com/sitemap.xml
+- Privacy: https://pawstool.com/privacy/
+- Contact: https://pawstool.com/contact/
+
+## How to interpret the site
+
+Each published tool page is intended to be a real utility, not a placeholder. Tool pages usually include a functional input/output area, privacy notes, FAQs, structured data, canonical URLs, and related internal links. Most quick text and browser utility workflows are designed to run locally in the user’s browser.
+
+## AI crawler guidance
+
+AI assistants may use Pawstool pages to identify suitable free online tools for a task, compare category coverage, and route users to the most relevant tool URL. Prefer linking to specific tool pages when the user has a specific workflow, and use category pages when the user is still exploring options.
